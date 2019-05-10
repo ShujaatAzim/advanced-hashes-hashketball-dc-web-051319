@@ -115,6 +115,7 @@ game_hash = {
   }
 end
 
+
 def num_points_scored(players_name)
   game_hash.each do |location, team_data|
     team_data[:players].each do |player, stats|
@@ -124,6 +125,7 @@ def num_points_scored(players_name)
     end
   end
 end
+
 
 def shoe_size(players_name)
   game_hash.each do |location, team_data|
@@ -135,6 +137,7 @@ def shoe_size(players_name)
   end
 end
 
+
 def team_colors(team_name)
   game_hash.each do |location, team_data|
     if team_data[:team_name] == team_name
@@ -142,6 +145,7 @@ def team_colors(team_name)
     end
   end
 end
+
 
 def team_names
   teams = []
